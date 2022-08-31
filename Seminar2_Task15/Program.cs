@@ -5,20 +5,19 @@ Console.WriteLine("Задача 15");
 
 Console.Write("Напишите цифру, обозначающий день недели");
 
-int dayNumber = Convert.ToInt32(Console.ReadLine);
-void CheckingTheDayOfTheWeek (int dayNumber)
-{
-    if (dayNumber == 6 || dayNumber == 7)
+int dayNumber = Convert.ToInt32(Console.ReadLine());
+
+if (dayNumber == 6 || dayNumber == 7)
     {
         Console.WriteLine("этот день выходной -> Да");
     }
-}
+    else
+    {
+        Console.WriteLine("Этот день не выходной");
+    }
 
-if (dayNumber < 1 || dayNumber > 7 )
+if(dayNumber < 1 || dayNumber > 7 )
 {
-Console.WriteLine("Этот число не является днем недели");
+Console.WriteLine("Это число не является днем недели");
 }
-
-else Console.WriteLine("Этот день не выходной");
-
 
