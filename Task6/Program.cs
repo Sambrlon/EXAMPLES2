@@ -1,12 +1,12 @@
 ﻿//Программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 Console.WriteLine("Введите число:");
-num = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 
-if (num % 2 == 1)
+if ( number % 2 == 1)
 {
-    Console.WriteLine("Число " + num + " является: НЕЧЁТНЫМ");
+    Console.WriteLine("Число " + number + " является: НЕЧЁТНЫМ");
 }
 else
 {
-    Console.WriteLine("Число " + num + "является: ЧЁТНЫМ");
+    Console.WriteLine("Число " + number + "является: ЧЁТНЫМ");
 }
