@@ -108,9 +108,48 @@ else
 
 
 
+/*
+Задача 42: Программа, которая будет выводить десятичное число в двоичное.
+// 18-> 10010;
+
 
 Console.Clear();
 Console.WriteLine("Введите число: ");
 int value = int.Parse(Console.ReadLine());
 string BinaryCode = Convert.ToString(value, 2);
 Console.WriteLine(BinaryCode);
+*/
+
+/*
+Задача 42: Программа, которая будет выводить десятичное число в двоичное.
+// 18-> 10010;
+
+
+Console.Clear();
+Console.WriteLine("Введите число: ");
+int value = int.Parse(Console.ReadLine());
+
+string i = "";
+while(value > 0)
+{
+    if(value % 2 != 0 )
+    {
+        i += "1";
+    }
+    else
+    {
+        i += "0";
+    }
+    value = value / 2;
+}
+Console.WriteLine($"В двоичной системе: ");
+Console.WriteLine(String.Join(" ", i.Reverse()));
+*/
+
+
+
+
+
+
+
+
