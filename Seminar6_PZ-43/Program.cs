@@ -15,9 +15,9 @@ void InputCoefficients()
         Console.Write($"Введите коэффициенты {i + 1}-го уравнения (y = k * x + b): \n ");
         for (int j = 0; j < coeff.GetLength(1); j++)
         {
-            if(j==0) Console.Write($"Введите коэффициент k: ");
+            if (j == 0) Console.Write($"Введите коэффициент k: ");
             else Console.Write($"Введите коэффициент b: ");
-            coeff[i,j] = Convert.ToInt16(Console.ReadLine());
+            coeff[i, j] = Convert.ToInt16(Console.ReadLine());
 
         }
     }
@@ -25,18 +25,18 @@ void InputCoefficients()
 
 double[] Decision(double[,] coeff)
 {
-    crossPoint[0] = (coeff[1,1] - coeff[0,1]) / ( coeff[0,0] - coeff[1,0]);
-    crossPoint[1] = crossPoint[0] * coeff[0,0] + coeff[0,1];
+    crossPoint[0] = (coeff[1, 1] - coeff[0, 1]) / (coeff[0, 0] - coeff[1, 0]);
+    crossPoint[1] = crossPoint[0] * coeff[0, 0] + coeff[0, 1];
     return crossPoint;
 }
 
 void OutputResponse(double[,] coeff)
 {
-    if(coeff[0,0] == coeff[1,0] && coeff[0,1] == coeff[1,1])
+    if (coeff[0, 0] == coeff[1, 0] && coeff[0, 1] == coeff[1, 1])
     {
         Console.Write($"\nПрямые совпадают");
     }
-    else if(coeff[0,0] == coeff[1,0] && coeff[0,1] != coeff[1,1])
+    else if (coeff[0, 0] == coeff[1, 0] && coeff[0, 1] != coeff[1, 1])
     {
         Console.Write($"\nПрямые параллельны");
     }

@@ -8,7 +8,7 @@ Console.Clear();
 Console.WriteLine($"Задача 41. Сколько чисел > 0 ввёл пользователь \n");
 Console.Write($"Введите число M(колличество чисел): ");
 int m = Convert.ToInt32(Console.ReadLine());
-int [] massiveNumbers = new int[m];
+int[] massiveNumbers = new int[m];
 
 void InputNumbers(int m)
 {
@@ -19,12 +19,12 @@ void InputNumbers(int m)
     }
 }
 
-int Comparison( int[] massiveNumbers)
+int Comparison(int[] massiveNumbers)
 {
     int count = 0;
     for (int i = 0; i < massiveNumbers.Length; i++)
     {
-        if(massiveNumbers[i] > 0) count +=1;
+        if (massiveNumbers[i] > 0) count += 1;
     }
     return count;
 }
